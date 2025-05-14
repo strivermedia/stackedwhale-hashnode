@@ -27,14 +27,14 @@ export const Header = () => {
 	};
 
 	const navList = (
-		<ul className="flex flex-row items-center gap-2 text-white">
+		<ul className="flex flex-row items-center gap-2 text-black">
 			{visibleItems.map((item) => (
 				<li key={item.url}>
 					<a
 						href={item.url}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="transition-200 block max-w-[200px] truncate text-ellipsis whitespace-nowrap rounded-full p-2 transition-colors hover:bg-white hover:text-black dark:hover:bg-neutral-800 dark:hover:text-white"
+						className="transition-200 block max-w-[200px] truncate text-ellipsis whitespace-nowrap rounded-full p-2 transition-colors hover:bg-green hover:text-black dark:hover:bg-neutral-800 dark:hover:text-white"
 					>
 						{item.label}
 					</a>
@@ -45,14 +45,14 @@ export const Header = () => {
 				<li>
 					<DropdownMenu.Root>
 						<DropdownMenu.Trigger asChild>
-							<button className="transition-200 block rounded-full p-2 transition-colors hover:bg-white hover:text-black dark:hover:bg-neutral-800 dark:hover:text-white">
+							<button className="transition-200 block rounded-full p-2 transition-colors hover:bg-green hover:text-black dark:hover:bg-neutral-800 dark:hover:text-white">
 								More
 							</button>
 						</DropdownMenu.Trigger>
 
 						<DropdownMenu.Portal>
 							<DropdownMenu.Content
-								className="w-48 rounded border border-gray-300 bg-white text-neutral-950 shadow-md dark:border-neutral-800 dark:bg-neutral-900 dark:text-white"
+								className="w-48 rounded border border-gray-300 bg-green text-neutral-950 shadow-md dark:border-neutral-800 dark:bg-neutral-900 dark:text-white"
 								align="end"
 								sideOffset={5}
 							>
@@ -99,7 +99,7 @@ export const Header = () => {
 				</div>
 				<div className="col-span-2 flex flex-row items-center justify-end gap-5 text-slate-950 lg:col-span-3">
 					<nav className="hidden lg:block">{navList}</nav>
-					<Button href={baseUrl} as="a" type="primary" label="Book a demo" />
+					<Button href={baseUrl} as="a" type="primary" label="Subscribe" />
 				</div>
 			</Container>
 			<div className="mt-5 flex justify-center lg:hidden">
