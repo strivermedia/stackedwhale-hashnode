@@ -93,11 +93,11 @@ const config = {
     return [
       {
         source: "/blog",
-        destination: "https://stackedwhale-hashnode-git-main-team-striver.vercel.app/blog",
+        destination: "https://stackedwhale-hashnode.vercel.app/blog",
       },
       {
         source: "/blog/:path*",
-        destination: "https://stackedwhale-hashnode-git-main-team-striver.vercel.app/blog/:path*",
+        destination: "https://stackedwhale-hashnode.vercel.app/blog/:path*",
       },
     ];
   },
