@@ -89,5 +89,15 @@ const config = {
 		return await getRedirectionRules();
 	},
 };
-
+async rewrites() {
+    return [
+      {
+        source: "/blog",
+        destination: "https://stackedwhale-hashnode.vercel.app/blog",
+      {
+        source: "/blog/:path*",
+        destination: "https://stackedwhale-hashnode.vercel.app/blog/:path*",
+      },
+    ];
+  },
 module.exports = config;
