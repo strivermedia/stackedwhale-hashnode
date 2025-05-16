@@ -90,3 +90,15 @@ const config = {
 	},
 };
 module.exports = config;
+async rewrites() {
+    return [
+      {
+        source: "/blog",
+        destination: "https://stackedwhale-hashnode.vercel.app/blog",
+      },
+      {
+        source: "/blog/:path*",
+        destination: "https://stackedwhale-hashnode.vercel.app/blog/:path*",
+      },
+    ];
+  },
